@@ -135,3 +135,5 @@ def predictiondiff():
 
     return render_template('diff.html',p='Your model is {}'.format(str(features[3])), prediction_text='Temperature diffference prediction is {}'.format(np.float64(prediction)),algos=algos)
 
+if __name__ == "__main__":
+    app.run(debug=True)
